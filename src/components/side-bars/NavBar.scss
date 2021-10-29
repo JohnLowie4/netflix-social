@@ -1,4 +1,4 @@
-.NavBar {
+#NavBar {
   background-color: #000000;
   height: 100%;
   width: 240px;
@@ -13,4 +13,16 @@
 
 .logo {
   margin: 24px;
+}
+
+li {
+  list-style: none;
+  margin: 7px 0 7px 0;
+
+  .link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+  }
 }

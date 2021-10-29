@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import ReactDOM from "react-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./NavBar.scss";
 import Home from "../Home";
 import MyList from "../MyList";
@@ -9,7 +11,7 @@ import ComingSoon from "../ComingSoon";
 function NavBar() {
   return (
     <BrowserRouter>
-      <div className="NavBar">
+      <div id="NavBar">
         <div className="logo">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -26,16 +28,43 @@ function NavBar() {
         <div className="navigation">
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <FontAwesomeIcon icon="home" style={{ color: "white" }} />
+              {/* <FontAwesomeIcon
+                icon={["fas", "home"]}
+                style={{ color: "white" }}
+              /> */}
+              <Link to="/" className="link">
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/my-list">My List</Link>
+              <FontAwesomeIcon icon="bookmark" style={{ color: "white" }} />
+              {/* <FontAwesomeIcon
+                icon={["fas", "bookmark"]}
+                style={{ color: "white" }}
+              /> */}
+              <Link to="/my-list" className="link">
+                My List
+              </Link>
             </li>
             <li>
-              <Link to="/browse">Browse</Link>
+              <FontAwesomeIcon
+                icon={["far", "compass"]}
+                style={{ color: "white" }}
+              />
+              <Link to="/browse" className="link">
+                Browse
+              </Link>
             </li>
             <li>
-              <Link to="/coming-soon">Coming Soon</Link>
+              <FontAwesomeIcon icon="calendar-alt" style={{ color: "white" }} />
+              {/* <FontAwesomeIcon
+                icon={["fas", "calendarAlt"]}
+                style={{ color: "white" }}
+              /> */}
+              <Link to="/coming-soon" className="link">
+                Coming Soon
+              </Link>
             </li>
           </ul>
         </div>

@@ -1,5 +1,5 @@
-/* .App {
-  min-width: 1080px;
-  width: auto !important;
-  width: 1080px;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.App {
+  font-family: "Inter", sans-serif;
+}

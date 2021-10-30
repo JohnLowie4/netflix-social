@@ -15,14 +15,43 @@
   margin: 24px;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  width: 145px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 li {
   list-style: none;
-  margin: 7px 0 7px 0;
+  margin: 8px 0 8px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  .f-icon {
+    font-size: 18px;
+    width: 22px !important;
+    height: 19px !important;
+    color: white;
+    margin: 0 5px 0 0;
+  }
 
   .link {
     text-decoration: none;
     font-weight: 500;
     font-size: 18px;
     color: white;
+    margin: 0 0 0 5px;
   }
+}
+
+.horizontalBar {
+  width: 210px;
+  height: 2px;
+  background-color: #2d2d2d;
+  margin: 20px 0 20px 0;
 }

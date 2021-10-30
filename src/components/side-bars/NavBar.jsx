@@ -32,46 +32,27 @@ function NavBar() {
         <div className="navigation">
           <ul>
             <li>
-              <FontAwesomeIcon icon="home" className="f-icon" />
-              <Link to="/" className="link">
-                Home
+              <Link to="/">
+                <FontAwesomeIcon icon="home" className="f-icon" />
+                <span className="link">Home</span>
               </Link>
             </li>
             <li>
-              <FontAwesomeIcon icon="bookmark" className="f-icon" />
-              <Link to="/my-list" className="link">
-                My List
+              <Link to="/my-list">
+                <FontAwesomeIcon icon="bookmark" className="f-icon" />
+                <span className="link">My List</span>
               </Link>
             </li>
             <li>
-              <FontAwesomeIcon icon="compass" className="f-icon" />
-              <Link to="/browse" className="link">
-                Browse
+              <Link to="/browse">
+                <FontAwesomeIcon icon="compass" className="f-icon" />
+                <span className="link">Browse</span>
               </Link>
             </li>
             <li>
-              <FontAwesomeIcon icon="calendar-alt" className="f-icon" />
-              <Link to="/coming-soon" className="link">
-                Coming Soon
-              </Link>
-            </li>
-          </ul>
-        </div>
-
-        {horizontalBar}
-
-        <div className="navigation">
-          <ul>
-            <li>
-              <FontAwesomeIcon icon="user" className="f-icon" />
-              <Link to="/friends" className="link">
-                Friends
-              </Link>
-            </li>
-            <li>
-              <FontAwesomeIcon icon="users" className="f-icon" />
-              <Link to="/parties" className="link">
-                Parties
+              <Link to="/coming-soon">
+                <FontAwesomeIcon icon="calendar-alt" className="f-icon" />
+                <span className="link">Coming Soon</span>
               </Link>
             </li>
           </ul>
@@ -82,9 +63,28 @@ function NavBar() {
         <div className="navigation">
           <ul>
             <li>
-              <FontAwesomeIcon icon="cog" className="f-icon" />
-              <Link to="/settings" className="link">
-                Settings
+              <Link to="/friends">
+                <FontAwesomeIcon icon="user" className="f-icon" />
+                <span className="link">Friends</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/parties">
+                <FontAwesomeIcon icon="users" className="f-icon" />
+                <span className="link">Parties</span>
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        {horizontalBar}
+
+        <div className="navigation">
+          <ul>
+            <li>
+              <Link to="/settings">
+                <FontAwesomeIcon icon="cog" className="f-icon" />
+                <span className="link">Settings</span>
               </Link>
             </li>
           </ul>

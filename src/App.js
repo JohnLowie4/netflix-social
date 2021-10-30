@@ -13,8 +13,12 @@ import {
   faUser,
   faUsers,
   faCog,
+  faUserPlus,
+  faLaptop,
+  faMobileAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
+// Adds icons to be globally used
 library.add(
   fab,
   faHome,
@@ -23,7 +27,10 @@ library.add(
   faCalendarAlt,
   faUser,
   faUsers,
-  faCog
+  faCog,
+  faUserPlus,
+  faLaptop,
+  faMobileAlt
 );
 
 function App() {

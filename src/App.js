@@ -1,5 +1,6 @@
 import "./App.css";
 import NavBar from "./components/side-bars/NavBar";
+import FriendActivity from "./components/side-bars/FriendActivity";
 import React from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -26,7 +27,12 @@ library.add(
 );
 
 function App() {
-  return <NavBar />;
+  return (
+    <div>
+      <NavBar />
+      <FriendActivity />
+    </div>
+  );
 }
 
 export default App;

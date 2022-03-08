@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import { Switch, Route, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./NavBar.scss";
 import Home from "../Home";
@@ -14,8 +14,8 @@ function NavBar() {
   const horizontalBar = <div className="horizontalBar"></div>;
 
   return (
-    <BrowserRouter>
-      <div id="NavBar">
+    <div id="NavBar">
+      <div className="Nav">
         <div className="logo">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +89,9 @@ function NavBar() {
             </li>
           </ul>
         </div>
+      </div>
 
+      <div id="Page">
         <Switch>
           <Route path="/settings">
             <Settings />
@@ -114,7 +116,7 @@ function NavBar() {
           </Route>
         </Switch>
       </div>
-    </BrowserRouter>
+    </div>
   );
 }
 

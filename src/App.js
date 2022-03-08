@@ -4,6 +4,7 @@ import FriendActivity from "./components/side-bars/FriendActivity";
 import React from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
+import { BrowserRouter } from "react-router-dom";
 // import { far, faCompass } from "@fortawesome/free-regular-svg-icons";
 import {
   faHome,
@@ -35,10 +36,10 @@ library.add(
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <NavBar />
       <FriendActivity />
-    </div>
+    </BrowserRouter>
   );
 }
 

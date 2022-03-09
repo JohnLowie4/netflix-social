@@ -15,5 +15,69 @@
   ],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "friends": [
+    {
+      "Ben Parker": {
+        "isOnline": true,
+        "currentDevice": "computer",
+        "currentlyWatching": {
+          "title": "Halloween Kills",
+          "timeStamp": 345000
+        }
+      }
+    },
+    {
+      "Vince Vera": {
+        "isOnline": true,
+        "currentDevice": "mobile",
+        "currentlyWatching": {
+          "title": "No Time to Die",
+          "timeStamp": 1202000
+        }
+      }
+    },
+    {
+      "Christopher Campbell": {
+        "isOnline": true,
+        "currentDevice": "computer",
+        "currentlyWatching": {
+          "title": "Free Guy",
+          "timeStamp": 3382000
+        }
+      }
+    },
+    {
+      "Jurica Koletic": {
+        "isOnline": true,
+        "currentDevice": "computer",
+        "currentlyWatching": {
+          "title": "Black Widow",
+          "timeStamp": 4436000
+        }
+      }
+    },
+    {
+      "Joseph Gonzalez": {
+        "isOnline": true,
+        "currentDevice": "mobile",
+        "currentlyWatching": {
+          "title": "Venom",
+          "timeStamp": 6356000
+        }
+      }
+    },
+    {
+      "Michael Dam": {
+        "isOnline": {
+          "lastOnline": 86400000
+        },
+        "currentDevice": null,
+        "currentlyWatching": {
+          "title": "Venom",
+          "timeStamp": 6956000
+        }
+      }
+    }
+  ]
 }

@@ -1,14 +1,8 @@
 import React from "react";
-import { Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import "./NavBar.scss";
-import Home from "../Home";
-import MyList from "../MyList";
-import Browse from "../Browse";
-import ComingSoon from "../ComingSoon";
-import Friends from "../Friends";
-import Parties from "../Parties";
-import Settings from "../Settings";
 
 function NavBar() {
   const horizontalBar = <div className="horizontalBar"></div>;
@@ -89,32 +83,6 @@ function NavBar() {
             </li>
           </ul>
         </div>
-      </div>
-
-      <div id="Page">
-        <Switch>
-          <Route path="/settings">
-            <Settings />
-          </Route>
-          <Route path="/parties">
-            <Parties />
-          </Route>
-          <Route path="/friends">
-            <Friends />
-          </Route>
-          <Route path="/coming-soon">
-            <ComingSoon />
-          </Route>
-          <Route path="/browse">
-            <Browse />
-          </Route>
-          <Route path="/my-list">
-            <MyList />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
       </div>
     </div>
   );

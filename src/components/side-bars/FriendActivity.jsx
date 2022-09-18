@@ -1,6 +1,7 @@
 import React from "react";
-import "./FriendActivity.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import "./FriendActivity.scss";
 import Friends from "./Friends";
 
 function FriendActivity() {

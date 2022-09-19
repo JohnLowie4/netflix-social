@@ -15,6 +15,8 @@ import {
   faMobileAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
+import { GlobalStyle } from './styles/globalStyles'
+
 import "./App.css";
 import NavBar from "./components/side-bars/NavBar";
 import FriendActivity from "./components/side-bars/FriendActivity";
@@ -39,6 +41,7 @@ library.add(
 function App() {
   return (
     <BrowserRouter>
+      <GlobalStyle />
       <NavBar />
       <Routes />
       <FriendActivity />
